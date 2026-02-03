@@ -115,6 +115,3 @@ temp/
 *.tmp
 *.temp
 *.bak
-
-# Claude Code
-.claude/
