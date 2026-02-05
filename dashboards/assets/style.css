@@ -1,0 +1,141 @@
+/* Custom CSS for Customer Segmentation Dashboard */
+
+/* Main container */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Headers */
+h1 {
+    color: #2C3E50;
+    font-weight: 600;
+}
+
+h2, h3 {
+    color: #34495E;
+    font-weight: 500;
+}
+
+/* Metric styling */
+[data-testid="stMetricValue"] {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+[data-testid="stMetricDelta"] {
+    font-size: 0.9rem;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #f8f9fa;
+}
+
+[data-testid="stSidebar"] h2 {
+    color: #2C3E50;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Card-like sections */
+.stTabs [data-baseweb="tab-panel"] {
+    padding: 1rem 0;
+}
+
+/* Tab styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #3498DB !important;
+    color: white !important;
+}
+
+/* DataFrame/Table styling */
+[data-testid="stDataFrame"] {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Info boxes */
+.stAlert {
+    border-radius: 8px;
+}
+
+/* Plotly chart containers */
+[data-testid="stPlotlyChart"] {
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+/* Button styling */
+.stButton > button {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.stButton > button:hover {
+    border-color: #3498DB;
+    color: #3498DB;
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    font-weight: 500;
+    color: #2C3E50;
+}
+
+/* Multiselect styling */
+[data-testid="stMultiSelect"] {
+    border-radius: 6px;
+}
+
+/* Slider styling */
+[data-testid="stSlider"] {
+    padding-top: 0.5rem;
+}
+
+/* Text input styling */
+[data-testid="stTextInput"] input {
+    border-radius: 6px;
+}
+
+/* Radio button styling */
+[data-testid="stRadio"] > div {
+    gap: 0.5rem;
+}
+
+/* Success/Warning/Error messages */
+.stSuccess, .stWarning, .stError {
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Footer spacing */
+footer {
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    [data-testid="stMetricValue"] {
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
