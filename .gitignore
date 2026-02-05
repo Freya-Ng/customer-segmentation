@@ -60,9 +60,9 @@ Thumbs.db
 desktop.ini
 
 # Data files
-# Raw data is tracked for reproducibility
+# Raw and processed data tracked for Streamlit cloud deployment
 # data/raw/
-data/processed/
+# data/processed/
 # *.csv
 # *.xlsx
 # *.xls
