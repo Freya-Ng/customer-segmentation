@@ -1,11 +1,11 @@
 # Customer Segmentation Analysis
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://customer-segmentation-analytics.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://advanced-customer-segmentation.streamlit.app/)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
 
 An end-to-end machine learning pipeline for customer segmentation using RFM analysis, K-Means clustering, and SHAP explainability on retail transaction data.
 
-🔗 **Live Dashboard:** [https://customer-segmentation-analytics.streamlit.app](https://customer-segmentation-analytics.streamlit.app)
+🔗 **Live Dashboard:** [https://advanced-customer-segmentation.streamlit.app/](https://advanced-customer-segmentation.streamlit.app/)
 
 ## Overview
 
@@ -150,7 +150,7 @@ cd dashboards
 streamlit run Home.py
 ```
 
-**Or access the live demo:** [https://customer-segmentation-analytics.streamlit.app](https://customer-segmentation-analytics.streamlit.app)
+**Or access the live demo:** [https://advanced-customer-segmentation.streamlit.app/](https://advanced-customer-segmentation.streamlit.app/)
 
 ## Dataset
 
