@@ -59,9 +59,10 @@ ehthumbs.db
 Thumbs.db
 desktop.ini
 
-# Data files (uncomment if data should not be tracked)
+# Data files
+# Raw data is tracked for reproducibility
 # data/raw/
-# data/processed/
+data/processed/
 # *.csv
 # *.xlsx
 # *.xls
