@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  🔗 <a href="https://advanced-customer-segmentation.streamlit.app"><b>View Live Demo</b></a> |
+  🔗 <a href="https://advanced-customer-segmentation.streamlit.app/"><b>View Live Demo</b></a> |
   📊 <a href="#business-dashboard">Business Dashboard</a> |
   🔬 <a href="#data-science-dashboard">Data Science Dashboard</a>
 </p>
@@ -128,7 +128,7 @@ Many segmentation projects stop at clustering — I wanted to go further with in
   </a>
 </p>
 
-**Access the live platform:** [https://advanced-customer-segmentation.streamlit.app](https://advanced-customer-segmentation.streamlit.app)
+**Access the live platform:** [https://advanced-customer-segmentation.streamlit.app/](https://advanced-customer-segmentation.streamlit.app/)
 
 ---
 
@@ -385,7 +385,7 @@ cd dashboards && streamlit run Home.py
 
 ### Access Live Demo
 
-🔗 **[https://advanced-customer-segmentation.streamlit.app](https://advanced-customer-segmentation.streamlit.app)**
+🔗 **[https://advanced-customer-segmentation.streamlit.app/](https://advanced-customer-segmentation.streamlit.app/)**
 
 ---
 
@@ -414,12 +414,13 @@ cd dashboards && streamlit run Home.py
 
 ## 👤 About the Author
 
-**Nguyen An Phuong Linh**
+**Nguyễn An Phương Linh**
 
 Data Scientist passionate about turning data into actionable insights.
 
 - 🔗 GitHub: [@Freya-Ng](https://github.com/Freya-Ng)
-- 💼 LinkedIn: [Connect with me](https://linkedin.com/in/)
+- 💼 LinkedIn: [An Phuong Linh Nguyen](https://www.linkedin.com/in/nguyenanphuonglinh/)
+- 📧 Email: anphuonglinh02062003@gmail.com
 
 ---
 
