@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  🔗 <a href="https://customer-segmentation-analytics.streamlit.app"><b>View Live Demo</b></a> |
+  🔗 <a href="https://advanced-customer-segmentation.streamlit.app"><b>View Live Demo</b></a> |
   📊 <a href="#business-dashboard">Business Dashboard</a> |
   🔬 <a href="#data-science-dashboard">Data Science Dashboard</a>
 </p>
@@ -32,6 +32,48 @@ A production-ready analytics platform featuring:
 - **Interactive Dashboards**: Dual Streamlit dashboards for business and technical users
 - **Model Interpretability**: SHAP-based explanations for cluster assignments
 - **Cloud Deployment**: Accessible anywhere via Streamlit Cloud
+
+---
+
+## 💡 Project Motivation & Approach
+
+### Why This Project?
+
+Customer segmentation is one of the most practical applications of data science in business. I wanted to build something that goes beyond just running a clustering algorithm — a project that bridges the gap between technical ML work and actionable business insights.
+
+**The questions I started with:**
+- If I were a marketing manager, what would I need to know about my customers?
+- Who spends the most? Who's at risk of leaving? How do I prioritize my efforts?
+- How can I make ML results understandable to non-technical stakeholders?
+
+Many segmentation projects stop at clustering — I wanted to go further with interpretability (SHAP), visualization (interactive dashboards), and real deployment (Streamlit Cloud).
+
+### Target Audience
+
+| Audience | What They Get |
+|----------|---------------|
+| **Business Stakeholders** | Insights without diving into code — KPIs, segments, recommendations |
+| **Data Science Reviewers** | Full methodology transparency — validation metrics, feature analysis |
+| **Learners & Practitioners** | Complete workflow reference — from raw data to deployed dashboard |
+
+### Thinking Process & Key Decisions
+
+| Decision | Why This Choice |
+|----------|-----------------|
+| **RFM Framework** | Industry-standard, intuitive for business users, captures key customer behaviors |
+| **UCI Online Retail Data** | Real transactional data (not synthetic), large enough to be meaningful, publicly available |
+| **Box-Cox + StandardScaler** | RFM features are heavily skewed; K-Means needs normalized, scaled features |
+| **K-Means Clustering** | Simple, interpretable, works well with continuous RFM-style features |
+| **Elbow + Silhouette** | Two validation methods provide confidence in K selection |
+| **SHAP Analysis** | Answers "why is this customer in this cluster?" — explainability builds trust |
+| **Two Dashboard Views** | Business users care about "what" and "so what"; technical users want methodology |
+
+### Design Philosophy
+
+- **Keep it simple** — don't over-engineer, every feature should serve a purpose
+- **Every visualization answers a question** — no charts for decoration
+- **Modular code** — reusable `src/` library for future projects
+- **Documentation matters** — future me (and others) should understand the decisions
 
 ---
 
@@ -86,7 +128,7 @@ A production-ready analytics platform featuring:
   </a>
 </p>
 
-**Access the live platform:** [https://customer-segmentation-analytics.streamlit.app](https://customer-segmentation-analytics.streamlit.app)
+**Access the live platform:** [https://advanced-customer-segmentation.streamlit.app](https://advanced-customer-segmentation.streamlit.app)
 
 ---
 
@@ -328,7 +370,7 @@ customer-segmentation/
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/customer-segmentation.git
+git clone https://github.com/Freya-Ng/customer-segmentation.git
 cd customer-segmentation
 
 # Install dependencies
@@ -343,7 +385,7 @@ cd dashboards && streamlit run Home.py
 
 ### Access Live Demo
 
-🔗 **[https://customer-segmentation-analytics.streamlit.app](https://customer-segmentation-analytics.streamlit.app)**
+🔗 **[https://advanced-customer-segmentation.streamlit.app](https://advanced-customer-segmentation.streamlit.app)**
 
 ---
 
@@ -372,13 +414,12 @@ cd dashboards && streamlit run Home.py
 
 ## 👤 About the Author
 
-**[Your Name]**
+**Nguyen An Phuong Linh**
 
 Data Scientist passionate about turning data into actionable insights.
 
-- 🔗 GitHub: [@yourusername](https://github.com/yourusername)
-- 💼 LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- 📧 Email: your.email@example.com
+- 🔗 GitHub: [@Freya-Ng](https://github.com/Freya-Ng)
+- 💼 LinkedIn: [Connect with me](https://linkedin.com/in/)
 
 ---
 
