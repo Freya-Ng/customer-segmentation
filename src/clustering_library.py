@@ -134,14 +134,21 @@ class DataCleaner:
 
     def save_cleaned_data(self, output_dir="../data/processed"):
         """
-        Save cleaned data to specified directory.
-
+        Save cleaned data and RFM data to specified directory.
+ 
         Args:
             output_dir (str): Output directory path
         """
         os.makedirs(output_dir, exist_ok=True)
+ 
+        # Save cleaned transaction data
         self.df_uk.to_csv(f"{output_dir}/cleaned_uk_data.csv", index=False)
         print(f"Saved cleaned data: {output_dir}/cleaned_uk_data.csv")
+ 
+        # Save RFM data if available
+        if self.rfm_data is not None:
+            self.rfm_data.to_csv(f"{output_dir}/rfm_data.csv")
+            print(f"Saved RFM data: {output_dir}/rfm_data.csv")
 
 
 class FeatureEngineer:
