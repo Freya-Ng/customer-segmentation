@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  🔗 <a href="https://customer-segmentation-analytics.streamlit.app"><b>View Live Demo</b></a> |
+  🔗 <a href="https://advanced-customer-segmentation.streamlit.app/"><b>View Live Demo</b></a> |
   📊 <a href="#business-dashboard">Business Dashboard</a> |
   🔬 <a href="#data-science-dashboard">Data Science Dashboard</a>
 </p>
@@ -86,7 +86,7 @@ A production-ready analytics platform featuring:
   </a>
 </p>
 
-**Access the live platform:** [https://customer-segmentation-analytics.streamlit.app](https://customer-segmentation-analytics.streamlit.app)
+**Access the live platform:** [https://advanced-customer-segmentation.streamlit.app/](https://advanced-customer-segmentation.streamlit.app/)
 
 ---
 
@@ -343,7 +343,7 @@ cd dashboards && streamlit run Home.py
 
 ### Access Live Demo
 
-🔗 **[https://customer-segmentation-analytics.streamlit.app](https://customer-segmentation-analytics.streamlit.app)**
+🔗 **[https://advanced-customer-segmentation.streamlit.app/](https://advanced-customer-segmentation.streamlit.app/)**
 
 ---
 
@@ -372,13 +372,13 @@ cd dashboards && streamlit run Home.py
 
 ## 👤 About the Author
 
-**[Your Name]**
+**Nguyễn An Phương Linh**
 
 Data Scientist passionate about turning data into actionable insights.
 
-- 🔗 GitHub: [@yourusername](https://github.com/yourusername)
-- 💼 LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- 📧 Email: your.email@example.com
+- 🔗 GitHub: [@Freya-Ng](https://github.com/Freya-Ng)
+- 💼 LinkedIn: [An Phuong Linh Nguyen](https://www.linkedin.com/in/nguyenanphuonglinh/)
+- 📧 Email: anphuonglinh02062003@gmail.com
 
 ---
 
