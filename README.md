@@ -1,6 +1,11 @@
 # Customer Segmentation Analysis
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://customer-segmentation-analytics.streamlit.app)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
+
 An end-to-end machine learning pipeline for customer segmentation using RFM analysis, K-Means clustering, and SHAP explainability on retail transaction data.
+
+🔗 **Live Dashboard:** [https://customer-segmentation-analytics.streamlit.app](https://customer-segmentation-analytics.streamlit.app)
 
 ## Overview
 
@@ -45,15 +50,44 @@ This project analyzes **541,909 retail transactions** to segment **3,920 UK cust
 4. **Optimal Segmentation:** K=4 provides finer granularity by splitting buyers into small/large accounts
 5. **Feature Importance:** SHAP reveals Sum_Quantity, Sum_TotalPrice, and Mean_UnitPrice as top differentiators
 
+## Interactive Dashboards
+
+This project includes **two interactive Streamlit dashboards** for exploring the segmentation results:
+
+### 📊 Business Analytics Dashboard
+For business stakeholders and marketing teams:
+- KPI cards (Revenue, Customers, Orders, AOV)
+- Daily/Monthly revenue trends with moving averages
+- Purchase heatmap (Day × Hour patterns)
+- Top products analysis (Quantity & Revenue)
+- Customer distribution and Pareto analysis
+- RFM distributions with actionable insights
+
+### 🔬 Data Science Dashboard
+For analysts and data scientists:
+- Feature distributions (Boxplots & Histograms)
+- PCA visualization (2D/3D scatter plots)
+- Cluster optimization (Elbow & Silhouette)
+- Radar charts for cluster profiles
+- Customer lookup tool
+- Feature comparison tables
+
+**Run the dashboard locally:**
+```bash
+cd dashboards
+streamlit run Home.py
+```
+
 ## Project Structure
 
 ```
 customer_segmentation/
 ├── data/
-│   ├── raw/                    # Original dataset
+│   ├── raw/                           # Original dataset
 │   │   └── online_retail.csv
-│   └── processed/              # Transformed outputs
+│   └── processed/                     # Transformed outputs
 │       ├── cleaned_uk_data.csv
+│       ├── rfm_data.csv
 │       ├── customer_features.csv
 │       ├── customer_features_transformed.csv
 │       ├── customer_features_scaled.csv
@@ -64,16 +98,36 @@ customer_segmentation/
 │   ├── 02_feature_engineering.ipynb   # Feature creation & transformation
 │   └── 03_modeling.ipynb              # Clustering & SHAP interpretation
 ├── src/
-│   └── clustering_library.py          # Core ML pipeline classes
+│   ├── __init__.py
+│   ├── clustering_library.py          # Core ML pipeline classes
+│   └── visualizations/                # Plotly chart functions
+│       ├── __init__.py
+│       ├── business_charts.py         # Business dashboard charts
+│       └── ds_charts.py               # Data science dashboard charts
+├── dashboards/                        # Streamlit application
+│   ├── Home.py                        # Main entry point
+│   ├── pages/
+│   │   ├── 1_Business_Analytics.py    # Business dashboard
+│   │   └── 2_Data_Science.py          # Data science dashboard
+│   ├── components/                    # Reusable UI components
+│   │   ├── data_loader.py
+│   │   ├── filters.py
+│   │   ├── kpi_cards.py
+│   │   └── tables.py
+│   └── assets/
+│       └── style.css
+├── .streamlit/
+│   └── config.toml                    # Streamlit configuration
 ├── requirements.txt                   # Python dependencies
-└── setup_code.py                      # Project initialization
+└── README.md
 ```
 
 ## Tech Stack
 
 - **Data Processing:** pandas, numpy
 - **Machine Learning:** scikit-learn (KMeans, PCA, RandomForestClassifier, StandardScaler)
-- **Visualization:** matplotlib, seaborn
+- **Visualization:** matplotlib, seaborn, plotly
+- **Dashboard:** streamlit
 - **Explainability:** shap (TreeExplainer)
 - **Statistical:** scipy (Box-Cox transformation)
 
@@ -86,11 +140,17 @@ cd customer_segmentation
 # Install dependencies
 pip install -r requirements.txt
 
-# Run notebooks in order
+# Run notebooks in order to generate processed data
 # 1. notebooks/01_cleaning_and_eda.ipynb
 # 2. notebooks/02_feature_engineering.ipynb
 # 3. notebooks/03_modeling.ipynb
+
+# Launch the interactive dashboard
+cd dashboards
+streamlit run Home.py
 ```
+
+**Or access the live demo:** [https://customer-segmentation-analytics.streamlit.app](https://customer-segmentation-analytics.streamlit.app)
 
 ## Dataset
 
